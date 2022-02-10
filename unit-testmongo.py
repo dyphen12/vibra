@@ -16,17 +16,13 @@ Made by Alexis W.
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-from sneakers.api.low import database as lowd
-from sneakers.api.low import builder as bd
-from sneakers.api.users import handler as hd
-from sneakers.api.users import userbase as ub
+from vibra.api.users import handler as hd
+from vibra.api.users import userbase as ub
 
 
 
 
 if __name__ == '__main__':
-    #lowd.load_database_ryzen()
-    #lowd.get_sneaker_by_sku('DM0841-100')
-    #print(ub.get_user_by_email('alexiswong10@gmail.com'))
+    print(ub.get_user_by_email('alexiswong10@gmail.com'))
     x = [1,2,3,4]
     print(str(x))

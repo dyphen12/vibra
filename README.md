@@ -1,2 +1,3 @@
 # vibra
- Logical Business App
+
+ Logical Business App.
