@@ -45,8 +45,7 @@ def user_signup_ryzen(name, lastname, password, email):
 
         # print(ids)
 
-        userdf = {'id': ids, 'name': name, 'lastname': lastname, 'password': password, 'email': email, 'sub': 0,
-                  'portfolio': "['empty']", 'payment': 0}
+        userdf = {'id': ids, 'name': name, 'lastname': lastname, 'password': password, 'email': email, 'type': 'citizen', 'payment': 0}
 
         # print(userdf)
 
