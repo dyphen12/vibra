@@ -9,7 +9,7 @@
 
 function getUsername(ssid) {
 
-    var std = "http://127.0.0.1:5000/user/%";
+    var std = "https://idemaa-vibra.herokuapp.com/user/%";
 
 
     var url = std.replace('%', ssid);
@@ -105,7 +105,7 @@ function SignUpNow() {
 
     document.getElementById("signup-status").innerHTML = 'Signing up...';
 
-    var std = "http://127.0.0.1:5000/signup/%";
+    var std = "https://idemaa-vibra.herokuapp.com/signup/%";
 
     var query = '{"results": {"name": "%","lastname": "#","email": "&","password": "$"}}'
 
@@ -225,7 +225,7 @@ function login() {
 
       }
     };
-    xhttp.open("POST", "http://127.0.0.1:5000/auth", true);
+    xhttp.open("POST", "https://idemaa-vibra.herokuapp.com/auth", true);
     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhttp.send(credential);
 
@@ -382,7 +382,7 @@ function getCookie(cname) {
 
 function getUsernameprofile(ssid) {
 
-    var std = "http://127.0.0.1:5000/user/%";
+    var std = "https://idemaa-vibra.herokuapp.com/user/%";
 
 
     var url = std.replace('%', ssid);
@@ -487,7 +487,7 @@ function dummy() {
 
 function apiVersion() {
 
-    var std = "http://127.0.0.1:5000/";
+    var std = "https://idemaa-vibra.herokuapp.com/";
 
 
     document.getElementById("version").innerHTML = 'Loading...';
