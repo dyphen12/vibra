@@ -62,8 +62,9 @@ a img{
 
 
 .android-logo-image {
-  height: 28px;
-  width: 140px;
+  height: 40px;
+  width: 46px;
+  margin-left: 100%;
 }
 
 
@@ -541,6 +542,18 @@ a img{
   }
 }
 
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+#emprendedores-card > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('../images/emprendedores1.png') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
 #idemaa-logo {
 
   position: relative;
@@ -556,5 +569,10 @@ a img{
   max-width: 70%;
   margin-top: 35%;
 
+}
+
+#sneaker-user > .demo-card-wide {
+
+    margin: 0 auto;
 }
 

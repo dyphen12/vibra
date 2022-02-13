@@ -178,7 +178,7 @@ function SignUpNow() {
 // Front: Called on Index
 function login() {
 
-    document.getElementById("signup-message").innerHTML = 'Iniciando Sesión...';
+    document.getElementById("login-message").innerHTML = 'Iniciando Sesión...';
 
     var x , y;
 
@@ -425,6 +425,8 @@ function loaduser() {
 
   // RYZEN: First (R1)
   console.log('R1 Started')
+
+  apiVersion();
 
   // This deletes some item that bothers.
   document.getElementById('more-button').style.display = 'none';

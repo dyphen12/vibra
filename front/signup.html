@@ -129,39 +129,34 @@
       <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
-           <a href="index.html">
-            <img id="idemaa-logo" src="../front/images/idemaalogo.png">
+            <a href="index.html">
+            <img class="android-logo-image" src="./images/idemaalogo.png">
               </a>
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
-          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+          <div onclick="location.href='search.html';" class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
 
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search-field">
-            </div>
           </div>
           <!-- Navigation -->
           <div id="nav-cont" class="android-navigation-container">
 
             <nav class="android-navigation mdl-navigation">
 
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" onclick="location.href='index.html';">Nosotros</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" onclick="location.href='index.html';">IDEMAA</a>
 
 
 
-            <a class="mdl-navigation__link mdl-typography--text-uppercase" onclick="togglesignup()">Registrarse</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" onclick="location.href='signup.html';">Registrarse</a>
 
 
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" onclick="togglelogin()">Iniciar Sesion</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" onclick="togglelogin()">Iniciar Sesión</a>
 
             </nav>
           </div>
 
-          <span class="android-mobile-title mdl-layout-title">
-            <img id="idemaa-logo" src="../front/images/idemaalogo.png">
+          <span onclick="location.href='index.html';" class="android-mobile-title mdl-layout-title">
+            <img class="android-logo-image" src="./images/idemaalogo.png">
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
@@ -184,6 +179,10 @@
 
 
 
+          <div id="saininbots" >
+
+
+            </div>
 
           <div id="loginbots" >
 
@@ -192,13 +191,13 @@
 
           <div id="logincar" class="demo-card-wide mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">Bienvenido</h2>
+              <h2 class="mdl-card__title-text">Bienvenido!</h2>
             </div>
             <div class="mdl-card__supporting-text">
 
               <!-- Textfield with Floating Label -->
 
-                    <form id="formalogin" action="#">
+                    <form id="formasignup" action="#">
                       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <input class="mdl-textfield__input" type="text" id="login-mail">
                         <label class="mdl-textfield__label" for="login-mail">Email...</label>
@@ -207,12 +206,13 @@
                     <!-- Numeric Textfield with Floating Label -->
 
                       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="password" pattern="-?[0-9]*(\.[0-9]+)?" id="loginpass">
-                        <label class="mdl-textfield__label" for="loginpass">Contraseña...</label>
+                        <input class="mdl-textfield__input" type="password" id="loginpass">
+                        <label class="mdl-textfield__label" for="login-mail">Password...</label>
                       </div>
                     </form>
 
 
+              <p id="login-message"></p>
 
             </div>
             <div class="mdl-card__actions mdl-card--border">
